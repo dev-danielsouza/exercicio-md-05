@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spar | Sua loja de natal</title>
+    <link rel="shortcut icon" href="components/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Spar | Sua Loja de Natal</title>
 </head>
 <body>
-    
+    <header>
+            <div class="container">
+                <div class="header-logo">
+                    <a href="#"><img src="components/images/logo.png" alt="Spar logo"></a>
+                    <h1 class="header-title">Spar</h1>
+                </div>
+                <nav class="header-navbar">
+                    <ul>
+                        <li>
+                            <a href="#about-section" class="navbar-item">Sobre a loja</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-item">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <section id="about-section">
+            <div class="container">
+                <img src="components/images/spar-loja.jpg" alt="fachada da loja Spar">
+                <div class="written-content">
+                    <h2>Conheça nossa loja</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Dolorem</strong> cupiditate officiis aperiam unde reprehenderit iusto natus rerum laborum, labore molestiae nihil dicta iure quasi aliquam, beatae eius distinctio numquam fuga? Lorem ipsum dolor sit amet, consectetur adipisicing elit. <strong>Exercitationem</strong> saepe, ratione adipisci doloremque asperiores labore cupiditate commodi sed ut reiciendis eos amet expedita in alias hic sunt ea quo ipsum.
+                    </p>
+                    <div class="shop-icons">
+                        <box-icon name='shopping-bag' type='solid' color='#055902' title="Ir para a loja"></box-icon>
+                        <box-icon name='phone' type='solid' color='#055902' title="(XX) XXXX-XXXX"></box-icon>
+                        <box-icon type='logo' color='#055902' name='whatsapp' title="Chame-nos no Whatsapp"></box-icon>
+                        <box-icon type='solid' name='location-plus' color='#055902' title="Rua Python, n° 340, Vila PHP - Rio de Janeiro - RJ"></box-icon>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="contact-section">
+            <div class="container">
+                <div class="contact-area">
+                    <h3>Contato:</h3>
+                    <form action="contact.php" method="post" autocomplete="on">
+                        <div>
+                            <input type="text" name="username" id="username" placeholder="Digite seu nome" minlength="5" autocomplete="username" required>
+                        </div>
+                        <div>
+                            <input type="email" name="user-email" id="user-email" placeholder="Digite seu e-mail" minlength="5" autocomplete="email" required>
+                        </div>
+                        <div>
+                            <input type="tel" name="user-cellphone" id="user-cellphone" placeholder="Digite seu telefone (opcional)" autocomplete="tel">
+                        </div>
+                        <div>
+                            <textarea name="contact-msg" id="contact-msg" cols="30" rows="10" placeholder="Diga-nos o que deseja:"></textarea>
+                        </div>
+                        <div>
+                            <input class="submit-button" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+                <div class="social-media-area">
+                    <h3>Redes Sociais:</h3>
+                    <div class="social-media">
+                        <a href="#" title="Siga-nos no Facebook"><img src="components/images/facebook-square-logo-60.png" alt="Facebook logo"></a>
+                        <a href="#" title="Siga-nos no Instagram"><img src="components/images/instagram-alt-logo-60.png" alt="Instagram logo"></a>
+                        <a href="#" title="Siga-nos no Twitter"><img src="components/images/twitter-logo-60.png" alt="Twitter logo"></a>
+                        <a href="#" title="Visite nossa loja da Shopify"><img src="components/images/shopify-logo-60.png" alt="Shopify logo"></a>
+                    </div>
+                </div>
+                <div class="shop-localization">
+                    <h3>Venha até nós:</h3>
+                    <p>
+                        Rua Python, n° 340, Vila PHP - Rio de Janeiro - RJ
+                    </p>
+                </div>
+            </div>
+    </section>
+    <footer>
+            <div class="container">
+                <div class="footer-logo">
+                    <img src="components/images/logo.png" alt="logo Spar">
+                    <h1>Spar &copy;</h1>
+                </div>
+                <p>
+                    "Contribuindo para um Natal magico."
+                </p>
+            </div>
+    </footer>
 </body>
 </html>
